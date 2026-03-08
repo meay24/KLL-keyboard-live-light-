@@ -1,4 +1,5 @@
 # KLL – Keyboard Live Light
+[![StandWithPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg)](https://techforpalestine.org/learn-more)
 
 A small project I made in about 2–3 hours to adapt the color of a **single-zone RGB keyboard** based on the dominant color currently displayed on the screen.
 
@@ -62,8 +63,9 @@ For testing, I compiled the project using **Nuitka**, which slightly improved pe
 
 That was the command for it: 
 
-> python.exe -m nuitka --standalone --onefile --windows-console-mode=disable --enable-plugin=numpy --plugin-enable=tk-inter --include-package=mss --include-package=cv2 --output-dir=dist "main(mss).py"
-
+```
+python.exe -m nuitka --standalone --onefile --windows-console-mode=disable --enable-plugin=numpy --plugin-enable=tk-inter --include-package=mss --include-package=cv2 --output-dir=dist "main(mss).py"
+```
 ---
 
 ## Known Issues
@@ -81,6 +83,28 @@ Now only God knows.**
 If you have ideas for improvements, optimizations, or bug fixes, feel free to contribute.
 
 My coding skills are far from perfect, so contributions are very welcome.
+
+---
+
+## Installing Dependencies
+
+This project requires a few Python libraries for screen capture, image processing, keyboard input, and RGB device control.
+
+Install all required packages with:
+
+```bash
+pip install numpy mss opencv-python keyboard openrgb-python
+```
+
+### Standard Library Modules
+
+The following modules are part of Python’s standard library and **do not require installation**:
+
+* `time`
+* `gc`
+* `math`
+
+After installing the dependencies, you can run the script normally.
 
 ---
 
