@@ -1,6 +1,6 @@
 import time
 import numpy as np
-import mss.windows
+import mss.windows #   !!!!HASH THIS LINE AND THE NEXT ONE IF YOU ARE NOT ON WINDOWS!!
 mss.windows.CAPTUREBLT = 0 # This flag captures layered windows (like games in borderless mode) but it causes a mouse flicker problem, also it can cause performance issues, so I disable it by default, but you can enable it if you want to capture those types of windows (just be aware of the potential performance hit) 
 import gc
 import mss
@@ -9,7 +9,6 @@ import keyboard
 from openrgb import OpenRGBClient
 from openrgb.utils import RGBColor
 import math #for the cute animation when toggling off!
-#from curses import raw 
 
 def main(): # Keep  everything in main to avoid global variables (slow) and make it easier to read, also makes it easier to add a GUI later if I want (which I probably won't but who knows)
     try:
@@ -160,3 +159,4 @@ def main(): # Keep  everything in main to avoid global variables (slow) and make
 if __name__ == "__main__": # Classic Python entry point :D 
     main()
     
+
