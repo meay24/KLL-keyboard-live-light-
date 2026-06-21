@@ -26,7 +26,7 @@ That's it.
 
 Press: (ctrl+alt+l) to toggle the ambient lighting **on/off**.
 
-Note: The shortcut is experimental and may occasionally require pressing twice.
+Note: The shortcut is experimental.
 
 ---
 
